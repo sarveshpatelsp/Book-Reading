@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:maxLines="4"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/card_publisher_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Publisher"
+                android:textSize="13sp"
+                android:maxLines="3"
+                android:textColor="@color/material_dynamic_neutral40"
+                android:layout_marginBottom="8dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/card_page_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Page Count"
+                android:textSize="10sp"
+                android:maxLines="4"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:layout_marginBottom="8dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
