@@ -9,33 +9,33 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="4dp"
-        android:layout_gravity="center_vertical">
+        android:padding="4dp">
 
         <ImageView
-            android:id="@+id/image_view"
+            android:id="@+id/card_image_view"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/card_title_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title"
-                android:textSize="18sp"
-                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
                 android:maxLines="4"
+                android:text="Title"
                 android:textColor="@color/black"
-                android:layout_marginBottom="8dp">
+                android:textSize="18sp"
+                android:textStyle="bold">
 
             </TextView>
 
@@ -43,22 +43,21 @@
                 android:id="@+id/card_publisher_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Publisher"
-                android:textSize="13sp"
+                android:layout_marginBottom="8dp"
                 android:maxLines="3"
+                android:text="Publisher"
                 android:textColor="@color/material_dynamic_neutral40"
-                android:layout_marginBottom="8dp">
-            </TextView>
+                android:textSize="13sp"></TextView>
 
             <TextView
                 android:id="@+id/card_page_count_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Page Count"
-                android:textSize="10sp"
+                android:layout_marginBottom="8dp"
                 android:maxLines="4"
+                android:text="Page Count"
                 android:textColor="@color/design_default_color_primary_dark"
-                android:layout_marginBottom="8dp">
+                android:textSize="10sp">
 
             </TextView>
 
